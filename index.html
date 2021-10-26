@@ -10,18 +10,20 @@
     <title>CryptoTracker</title>
 </head>
 
-<body>
+<body style="background-color: rgb(37, 28, 51);">
     <div class="container">
         <div class="row justify-content-center">
-            <h1 class="col-md-7 text-center">CryptoTracker</h1>
-            <h4 class="col-md-7 text-center">By Ashok Rathod</h4>
-            <div class="col-md-6 row justify-content-center">
-                <div class="col-10">
+            <h1 class="col-md-7 text-center" style="font-weight: 700; color:white;">CryptoTracker</h1>
+            <h5 class="col-md-7 text-center" style="font-size: large; color: white;">By Ashok Rathod</h5>
+            <div class="col-md-9 row justify-content-center" style="background-color: yellow;">
+                <div class="col-6">
                     <form action="" id="searchForm">
                         <div class="form-row">
                             <div class="col-12 form-group">
-                                <label for="xyz"><b>Coin Type</b></label>
-                                <select name="coinType" class="form-control" id="xyz">
+                                <label for="xyz" class="m-2"
+                                    style="color: brown; font-weight: 700; font-size: 5;"><b>Coin Type</b></label>
+                                <select name="coinType" class="form-control" id="xyz"
+                                    style="background-color: rgb(204, 250, 250);">
                                     <option value="btc-usd">Bitcoin - USD</option>
                                     <option value="doge-usd">Dogecoin - USD</option>
                                     <option value="eth-usd">Etherum - USD</option>
@@ -31,19 +33,21 @@
                             </div>
                         </div>
                         <hr>
-                        <button type="submit" class="col-12 btn btn-primary">Get Price</button>
+                        <button type="submit" class="col-12 btn btn-primary" style="font-weight: 700;">Get
+                            Price</button>
                     </form>
                 </div>
-            </div>
-            <div class="col-md-7 text-center row justify-content-center">
-                <table class="col-md-7 m-2" border="1px" id="tableResult">
-                   
-                </table>
-            </div>
 
+                <div class="col-md-7 text-center row justify-content-center">
+                    <table class="col-md-7 m-2" border="1px" id="tableResult" style="background-color: rgb(181, 235, 235);">
+
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '093da02b-8382-4e30-a50f-cde626ccb688', f: true }); done = true; } }; })();</script>
+    <script type='text/javascript'
+        data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '093da02b-8382-4e30-a50f-cde626ccb688', f: true }); done = true; } }; })();</script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
